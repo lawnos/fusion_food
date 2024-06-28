@@ -1,0 +1,1643 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Dashboard V.1 | Nalika - Material Admin Template</title>
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+  <style id="" media="all">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: url(https://colorlib.com/fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://colorlib.com/fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://colorlib.com/fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://colorlib.com/fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://colorlib.com/fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/nalika-icon.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <link rel="stylesheet" href="css/meanmenu.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/morrisjs/morris.css">
+
+  <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
+
+  <link rel="stylesheet" href="css/metisMenu/metisMenu.min.css">
+  <link rel="stylesheet" href="css/metisMenu/metisMenu-vertical.css">
+
+  <link rel="stylesheet" href="css/calendar/fullcalendar.min.css">
+  <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <meta name="robots" content="noindex, nofollow">
+  <script
+    nonce="d0d43353-1e09-4fa7-9f1f-ffb0f519a722">(function (w, d) { !function (bb, bc, bd, be) { bb[bd] = bb[bd] || {}; bb[bd].executed = []; bb.zaraz = { deferred: [], listeners: [] }; bb.zaraz.q = []; bb.zaraz._f = function (bf) { return async function () { var bg = Array.prototype.slice.call(arguments); bb.zaraz.q.push({ m: bf, a: bg }) } }; for (const bh of ["track", "set", "debug"]) bb.zaraz[bh] = bb.zaraz._f(bh); bb.zaraz.init = () => { var bi = bc.getElementsByTagName(be)[0], bj = bc.createElement(be), bk = bc.getElementsByTagName("title")[0]; bk && (bb[bd].t = bc.getElementsByTagName("title")[0].text); bb[bd].x = Math.random(); bb[bd].w = bb.screen.width; bb[bd].h = bb.screen.height; bb[bd].j = bb.innerHeight; bb[bd].e = bb.innerWidth; bb[bd].l = bb.location.href; bb[bd].r = bc.referrer; bb[bd].k = bb.screen.colorDepth; bb[bd].n = bc.characterSet; bb[bd].o = (new Date).getTimezoneOffset(); if (bb.dataLayer) for (const bo of Object.entries(Object.entries(dataLayer).reduce(((bp, bq) => ({ ...bp[1], ...bq[1] })), {}))) zaraz.set(bo[0], bo[1], { scope: "page" }); bb[bd].q = []; for (; bb.zaraz.q.length;) { const br = bb.zaraz.q.shift(); bb[bd].q.push(br) } bj.defer = !0; for (const bs of [localStorage, sessionStorage]) Object.keys(bs || {}).filter((bu => bu.startsWith("_zaraz_"))).forEach((bt => { try { bb[bd]["z_" + bt.slice(7)] = JSON.parse(bs.getItem(bt)) } catch { bb[bd]["z_" + bt.slice(7)] = bs.getItem(bt) } })); bj.referrerPolicy = "origin"; bj.src = "https://colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bb[bd]))); bi.parentNode.insertBefore(bj, bi) };["complete", "interactive"].includes(bc.readyState) ? zaraz.init() : bb.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+  <div class="left-sidebar-pro">
+    <nav id="sidebar" class>
+      <div class="sidebar-header">
+        <a href="https://colorlib.com/polygon/nalika/index.html"><img class="main-logo"
+            src="https://colorlib.com/polygon/nalika/img/logo/logo.png" alt /></a>
+        <strong><img src="https://colorlib.com/polygon/nalika/img/logo/logosn.png" alt /></strong>
+      </div>
+      <div class="nalika-profile">
+        <div class="profile-dtl">
+          <a href="#"><img src="https://colorlib.com/polygon/nalika/img/notification/4.jpg" alt /></a>
+          <h2>Lakian <span class="min-dtn">Das</span></h2>
+        </div>
+        <div class="profile-social-dtl">
+          <ul class="dtl-social">
+            <li><a href="#"><i class="icon nalika-facebook"></i></a></li>
+            <li><a href="#"><i class="icon nalika-twitter"></i></a></li>
+            <li><a href="#"><i class="icon nalika-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="left-custom-menu-adp-wrap comment-scrollbar">
+        <nav class="sidebar-nav left-sidebar-menu-pro">
+          <ul class="metismenu" id="menu1">
+            <li class="active">
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/index.html">
+                <i class="icon nalika-home icon-wrap"></i>
+                <span class="mini-click-non">Ecommerce</span>
+              </a>
+              <ul class="submenu-angle" aria-expanded="true">
+                <li><a title="Dashboard v.1" href="https://colorlib.com/polygon/nalika/index.html"><span
+                      class="mini-sub-pro">Dashboard v.1</span></a></li>
+                <li><a title="Dashboard v.2" href="https://colorlib.com/polygon/nalika/index-1.html"><span
+                      class="mini-sub-pro">Dashboard v.2</span></a></li>
+                <li><a title="Dashboard v.3" href="https://colorlib.com/polygon/nalika/index-2.html"> <span
+                      class="mini-sub-pro">Dashboard v.3</span></a></li>
+                <li><a title="Product List" href="https://colorlib.com/polygon/nalika/product-list.html"><span
+                      class="mini-sub-pro">Product List</span></a></li>
+                <li><a title="Product Edit" href="https://colorlib.com/polygon/nalika/product-edit.html"><span
+                      class="mini-sub-pro">Product Edit</span></a></li>
+                <li><a title="Product Detail" href="https://colorlib.com/polygon/nalika/product-detail.html"><span
+                      class="mini-sub-pro">Product Detail</span></a></li>
+                <li><a title="Product Cart" href="https://colorlib.com/polygon/nalika/product-cart.html"><span
+                      class="mini-sub-pro">Product Cart</span></a></li>
+                <li><a title="Product Payment" href="https://colorlib.com/polygon/nalika/product-payment.html"><span
+                      class="mini-sub-pro">Product Payment</span></a></li>
+                <li><a title="Analytics" href="https://colorlib.com/polygon/nalika/analytics.html"><span
+                      class="mini-sub-pro">Analytics</span></a></li>
+                <li><a title="Widgets" href="https://colorlib.com/polygon/nalika/widgets.html"><span
+                      class="mini-sub-pro">Widgets</span></a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Inbox" href="https://colorlib.com/polygon/nalika/mailbox.html"><span
+                      class="mini-sub-pro">Inbox</span></a></li>
+                <li><a title="View Mail" href="https://colorlib.com/polygon/nalika/mailbox-view.html"><span
+                      class="mini-sub-pro">View Mail</span></a></li>
+                <li><a title="Compose Mail" href="https://colorlib.com/polygon/nalika/mailbox-compose.html"><span
+                      class="mini-sub-pro">Compose Mail</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-diamond icon-wrap"></i> <span class="mini-click-non">Interface</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Google Map" href="https://colorlib.com/polygon/nalika/google-map.html"><span
+                      class="mini-sub-pro">Google Map</span></a></li>
+                <li><a title="Data Maps" href="https://colorlib.com/polygon/nalika/data-maps.html"><span
+                      class="mini-sub-pro">Data Maps</span></a></li>
+                <li><a title="Pdf Viewer" href="https://colorlib.com/polygon/nalika/pdf-viewer.html"><span
+                      class="mini-sub-pro">Pdf Viewer</span></a></li>
+                <li><a title="X-Editable" href="https://colorlib.com/polygon/nalika/x-editable.html"><span
+                      class="mini-sub-pro">X-Editable</span></a></li>
+                <li><a title="Code Editor" href="https://colorlib.com/polygon/nalika/code-editor.html"><span
+                      class="mini-sub-pro">Code Editor</span></a></li>
+                <li><a title="Tree View" href="https://colorlib.com/polygon/nalika/tree-view.html"><span
+                      class="mini-sub-pro">Tree View</span></a></li>
+                <li><a title="Preloader" href="https://colorlib.com/polygon/nalika/preloader.html"><span
+                      class="mini-sub-pro">Preloader</span></a></li>
+                <li><a title="Images Cropper" href="https://colorlib.com/polygon/nalika/images-cropper.html"><span
+                      class="mini-sub-pro">Images Cropper</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-pie-chart icon-wrap"></i> <span class="mini-click-non">Miscellaneous</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="File Manager" href="https://colorlib.com/polygon/nalika/file-manager.html"><span
+                      class="mini-sub-pro">File Manager</span></a></li>
+                <li><a title="Blog" href="https://colorlib.com/polygon/nalika/blog.html"><span
+                      class="mini-sub-pro">Blog</span></a></li>
+                <li><a title="Blog Details" href="https://colorlib.com/polygon/nalika/blog-details.html"><span
+                      class="mini-sub-pro">Blog Details</span></a></li>
+                <li><a title="404 Page" href="https://colorlib.com/polygon/nalika/404.html"><span
+                      class="mini-sub-pro">404 Page</span></a></li>
+                <li><a title="500 Page" href="https://colorlib.com/polygon/nalika/500.html"><span
+                      class="mini-sub-pro">500 Page</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-bar-chart icon-wrap"></i> <span class="mini-click-non">Charts</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Bar Charts" href="https://colorlib.com/polygon/nalika/bar-charts.html"><span
+                      class="mini-sub-pro">Bar Charts</span></a></li>
+                <li><a title="Line Charts" href="https://colorlib.com/polygon/nalika/line-charts.html"><span
+                      class="mini-sub-pro">Line Charts</span></a></li>
+                <li><a title="Area Charts" href="https://colorlib.com/polygon/nalika/area-charts.html"><span
+                      class="mini-sub-pro">Area Charts</span></a></li>
+                <li><a title="Rounded Charts" href="https://colorlib.com/polygon/nalika/rounded-chart.html"><span
+                      class="mini-sub-pro">Rounded Charts</span></a></li>
+                <li><a title="C3 Charts" href="https://colorlib.com/polygon/nalika/c3.html"><span
+                      class="mini-sub-pro">C3 Charts</span></a></li>
+                <li><a title="Sparkline Charts" href="https://colorlib.com/polygon/nalika/sparkline.html"><span
+                      class="mini-sub-pro">Sparkline Charts</span></a></li>
+                <li><a title="Peity Charts" href="https://colorlib.com/polygon/nalika/peity.html"><span
+                      class="mini-sub-pro">Peity Charts</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-table icon-wrap"></i> <span class="mini-click-non">Data Tables</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Peity Charts" href="https://colorlib.com/polygon/nalika/static-table.html"><span
+                      class="mini-sub-pro">Static Table</span></a></li>
+                <li><a title="Data Table" href="https://colorlib.com/polygon/nalika/data-table.html"><span
+                      class="mini-sub-pro">Data Table</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-forms icon-wrap"></i> <span class="mini-click-non">Forms Elements</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Basic Form Elements"
+                    href="https://colorlib.com/polygon/nalika/basic-form-element.html"><span class="mini-sub-pro">Bc
+                      Form Elements</span></a></li>
+                <li><a title="Advance Form Elements"
+                    href="https://colorlib.com/polygon/nalika/advance-form-element.html"><span class="mini-sub-pro">Ad
+                      Form Elements</span></a></li>
+                <li><a title="Password Meter" href="https://colorlib.com/polygon/nalika/password-meter.html"><span
+                      class="mini-sub-pro">Password Meter</span></a></li>
+                <li><a title="Multi Upload" href="https://colorlib.com/polygon/nalika/multi-upload.html"><span
+                      class="mini-sub-pro">Multi Upload</span></a></li>
+                <li><a title="Text Editor" href="https://colorlib.com/polygon/nalika/tinymc.html"><span
+                      class="mini-sub-pro">Text Editor</span></a></li>
+                <li><a title="Dual List Box" href="https://colorlib.com/polygon/nalika/dual-list-box.html"><span
+                      class="mini-sub-pro">Dual List Box</span></a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="has-arrow" href="https://colorlib.com/polygon/nalika/mailbox.html" aria-expanded="false"><i
+                  class="icon nalika-smartphone-call icon-wrap"></i> <span class="mini-click-non">App views</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Notifications" href="https://colorlib.com/polygon/nalika/notifications.html"><span
+                      class="mini-sub-pro">Notifications</span></a></li>
+                <li><a title="Alerts" href="https://colorlib.com/polygon/nalika/alerts.html"><span
+                      class="mini-sub-pro">Alerts</span></a></li>
+                <li><a title="Modals" href="https://colorlib.com/polygon/nalika/modals.html"><span
+                      class="mini-sub-pro">Modals</span></a></li>
+                <li><a title="Buttons" href="https://colorlib.com/polygon/nalika/buttons.html"><span
+                      class="mini-sub-pro">Buttons</span></a></li>
+                <li><a title="Tabs" href="https://colorlib.com/polygon/nalika/tabs.html"><span
+                      class="mini-sub-pro">Tabs</span></a></li>
+                <li><a title="Accordion" href="https://colorlib.com/polygon/nalika/accordion.html"><span
+                      class="mini-sub-pro">Accordion</span></a></li>
+              </ul>
+            </li>
+            <li id="removable">
+              <a class="has-arrow" href="#" aria-expanded="false"><i class="icon nalika-new-file icon-wrap"></i> <span
+                  class="mini-click-non">Pages</span></a>
+              <ul class="submenu-angle" aria-expanded="false">
+                <li><a title="Login" href="https://colorlib.com/polygon/nalika/login.html"><span
+                      class="mini-sub-pro">Login</span></a></li>
+                <li><a title="Register" href="https://colorlib.com/polygon/nalika/register.html"><span
+                      class="mini-sub-pro">Register</span></a></li>
+                <li><a title="Lock" href="https://colorlib.com/polygon/nalika/lock.html"><span
+                      class="mini-sub-pro">Lock</span></a></li>
+                <li><a title="Password Recovery" href="https://colorlib.com/polygon/nalika/password-recovery.html"><span
+                      class="mini-sub-pro">Password Recovery</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+  </div>
+
+  <div class="all-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="logo-pro">
+            <a href="https://colorlib.com/polygon/nalika/index.html"><img class="main-logo"
+                src="https://colorlib.com/polygon/nalika/img/logo/logo.png" alt /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-advance-area">
+      <div class="header-top-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="header-top-wraper">
+                <div class="row">
+                  <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                    <div class="menu-switcher-pro">
+                      <button type="button" id="sidebarCollapse"
+                        class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                        <i class="icon nalika-menu-task"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                    <div class="header-top-menu tabl-d-n hd-search-rp">
+                      <div class="breadcome-heading">
+                        <form role="search" class>
+                          <input type="text" placeholder="Search..." class="form-control">
+                          <a href><i class="fa fa-search"></i></a>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div class="header-right-info">
+                      <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                        <li class="nav-item dropdown">
+                          <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                            class="nav-link dropdown-toggle"><i class="icon nalika-mail" aria-hidden="true"></i><span
+                              class="indicator-ms"></span></a>
+                          <div role="menu" class="author-message-top dropdown-menu animated zoomIn">
+                            <div class="message-single-top">
+                              <h1>Message</h1>
+                            </div>
+                            <ul class="message-menu">
+                              <li>
+                                <a href="#">
+                                  <div class="message-img">
+                                    <img src="https://colorlib.com/polygon/nalika/img/contact/1.jpg" alt>
+                                  </div>
+                                  <div class="message-content">
+                                    <span class="message-date">16 Sept</span>
+                                    <h2>Advanda Cro</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="message-img">
+                                    <img src="https://colorlib.com/polygon/nalika/img/contact/4.jpg" alt>
+                                  </div>
+                                  <div class="message-content">
+                                    <span class="message-date">16 Sept</span>
+                                    <h2>Sulaiman din</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="message-img">
+                                    <img src="https://colorlib.com/polygon/nalika/img/contact/3.jpg" alt>
+                                  </div>
+                                  <div class="message-content">
+                                    <span class="message-date">16 Sept</span>
+                                    <h2>Victor Jara</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="message-img">
+                                    <img src="https://colorlib.com/polygon/nalika/img/contact/2.jpg" alt>
+                                  </div>
+                                  <div class="message-content">
+                                    <span class="message-date">16 Sept</span>
+                                    <h2>Victor Jara</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                            <div class="message-view">
+                              <a href="#">View All Messages</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                            class="nav-link dropdown-toggle"><i class="icon nalika-alarm" aria-hidden="true"></i><span
+                              class="indicator-nt"></span></a>
+                          <div role="menu" class="notification-author dropdown-menu animated zoomIn">
+                            <div class="notification-single-top">
+                              <h1>Notifications</h1>
+                            </div>
+                            <ul class="notification-menu">
+                              <li>
+                                <a href="#">
+                                  <div class="notification-icon">
+                                    <i class="icon nalika-tick" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="notification-content">
+                                    <span class="notification-date">16 Sept</span>
+                                    <h2>Advanda Cro</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="notification-icon">
+                                    <i class="icon nalika-cloud" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="notification-content">
+                                    <span class="notification-date">16 Sept</span>
+                                    <h2>Sulaiman din</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="notification-icon">
+                                    <i class="icon nalika-folder" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="notification-content">
+                                    <span class="notification-date">16 Sept</span>
+                                    <h2>Victor Jara</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  <div class="notification-icon">
+                                    <i class="icon nalika-bar-chart" aria-hidden="true"></i>
+                                  </div>
+                                  <div class="notification-content">
+                                    <span class="notification-date">16 Sept</span>
+                                    <h2>Victor Jara</h2>
+                                    <p>Please done this project as soon possible.</p>
+                                  </div>
+                                </a>
+                              </li>
+                            </ul>
+                            <div class="notification-view">
+                              <a href="#">View All Notification</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                            class="nav-link dropdown-toggle">
+                            <i class="icon nalika-user"></i>
+                            <span class="admin-name">Advanda Cro</span>
+                            <i class="icon nalika-down-arrow nalika-angle-dw"></i>
+                          </a>
+                          <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                            <li><a href="https://colorlib.com/polygon/nalika/register.html"><span
+                                  class="icon nalika-home author-log-ic"></span> Register</a>
+                            </li>
+                            <li><a href="#"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
+                            </li>
+                            <li><a href="https://colorlib.com/polygon/nalika/lock.html"><span
+                                  class="icon nalika-diamond author-log-ic"></span> Lock</a>
+                            </li>
+                            <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
+                            </li>
+                            <li><a href="https://colorlib.com/polygon/nalika/login.html"><span
+                                  class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown" role="button"
+                            aria-expanded="false" class="nav-link dropdown-toggle"><i
+                              class="icon nalika-menu-task"></i></a>
+                          <div role="menu"
+                            class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
+                            <ul class="nav nav-tabs custon-set-tab">
+                              <li class="active"><a data-toggle="tab" href="#Notes">News</a>
+                              </li>
+                              <li><a data-toggle="tab" href="#Projects">Activity</a>
+                              </li>
+                              <li><a data-toggle="tab" href="#Settings">Settings</a>
+                              </li>
+                            </ul>
+                            <div class="tab-content custom-bdr-nt">
+                              <div id="Notes" class="tab-pane fade in active">
+                                <div class="notes-area-wrap">
+                                  <div class="note-heading-indicate">
+                                    <h2><i class="icon nalika-chat"></i> Latest News</h2>
+                                    <p>You have 10 New News.</p>
+                                  </div>
+                                  <div class="notes-list-area notes-menu-scrollbar">
+                                    <ul class="notes-menu-list">
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/4.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/1.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/2.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/3.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/4.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/1.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/2.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/1.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/2.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="notes-list-flow">
+                                            <div class="notes-img">
+                                              <img src="https://colorlib.com/polygon/nalika/img/contact/3.jpg" alt />
+                                            </div>
+                                            <div class="notes-content">
+                                              <p> The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                              </p>
+                                              <span>Yesterday 2:45 pm</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="Projects" class="tab-pane fade">
+                                <div class="projects-settings-wrap">
+                                  <div class="note-heading-indicate">
+                                    <h2><i class="icon nalika-happiness"></i> Recent Activity</h2>
+                                    <p> You have 20 Recent Activity.</p>
+                                  </div>
+                                  <div class="project-st-list-area project-st-menu-scrollbar">
+                                    <ul class="projects-st-menu-list">
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New User Registered</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">1 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New Order Received</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">2 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New Order Received</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">3 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New Order Received</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">4 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New User Registered</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">5 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New Order</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">6 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New User</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">7 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="#">
+                                          <div class="project-list-flow">
+                                            <div class="projects-st-heading">
+                                              <h2>New Order</h2>
+                                              <p> The point of using Lorem Ipsum is that it has a more or less normal.
+                                              </p>
+                                              <span class="project-st-time">9 hours ago</span>
+                                            </div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="Settings" class="tab-pane fade">
+                                <div class="setting-panel-area">
+                                  <div class="note-heading-indicate">
+                                    <h2><i class="icon nalika-gear"></i> Settings Panel</h2>
+                                    <p> You have 20 Settings. 5 not completed.</p>
+                                  </div>
+                                  <ul class="setting-panel-list">
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Show notifications</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
+                                                id="example">
+                                              <label class="onoffswitch-label" for="example">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Disable Chat</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
+                                                id="example3">
+                                              <label class="onoffswitch-label" for="example3">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Enable history</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
+                                                id="example4">
+                                              <label class="onoffswitch-label" for="example4">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Show charts</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox"
+                                                id="example7">
+                                              <label class="onoffswitch-label" for="example7">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Update everyday</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" checked
+                                                class="onoffswitch-checkbox" id="example2">
+                                              <label class="onoffswitch-label" for="example2">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Global search</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" checked
+                                                class="onoffswitch-checkbox" id="example6">
+                                              <label class="onoffswitch-label" for="example6">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="checkbox-setting-pro">
+                                        <div class="checkbox-title-pro">
+                                          <h2>Offline users</h2>
+                                          <div class="ts-custom-check">
+                                            <div class="onoffswitch">
+                                              <input type="checkbox" name="collapsemenu" checked
+                                                class="onoffswitch-checkbox" id="example5">
+                                              <label class="onoffswitch-label" for="example5">
+                                                <span class="onoffswitch-inner"></span>
+                                                <span class="onoffswitch-switch"></span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="mobile-menu">
+                <nav id="dropdown">
+                  <ul class="mobile-menu-nav">
+                    <li><a data-toggle="collapse" data-target="#Charts" href="#">Home <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/index.html">Dashboard v.1</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/index-1.html">Dashboard v.2</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/index-3.html">Dashboard v.3</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/product-list.html">Product List</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/product-edit.html">Product Edit</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/product-detail.html">Product Detail</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/product-cart.html">Product Cart</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/product-payment.html">Product Payment</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/analytics.html">Analytics</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/widgets.html">Widgets</a></li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#demo" href="#">Mailbox <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="demo" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/mailbox.html">Inbox</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/mailbox-view.html">View Mail</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/mailbox-compose.html">Compose Mail</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#others" href="#">Miscellaneous <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="others" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/file-manager.html">File Manager</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/contacts.html">Contacts Client</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/projects.html">Project</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/project-details.html">Project Details</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/blog.html">Blog</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/blog-details.html">Blog Details</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/404.html">404 Page</a></li>
+                        <li><a href="https://colorlib.com/polygon/nalika/500.html">500 Page</a></li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#Miscellaneousmob" href="#">Interface <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="Miscellaneousmob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/google-map.html">Google Map</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/data-maps.html">Data Maps</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/pdf-viewer.html">Pdf Viewer</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/x-editable.html">X-Editable</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/code-editor.html">Code Editor</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/tree-view.html">Tree View</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/preloader.html">Preloader</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/images-cropper.html">Images Cropper</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#Chartsmob" href="#">Charts <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="Chartsmob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/bar-charts.html">Bar Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/line-charts.html">Line Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/area-charts.html">Area Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/rounded-chart.html">Rounded Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/c3.html">C3 Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/sparkline.html">Sparkline Charts</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/peity.html">Peity Charts</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#Tablesmob" href="#">Tables <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="Tablesmob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/static-table.html">Static Table</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/data-table.html">Data Table</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#formsmob" href="#">Forms <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="formsmob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/basic-form-element.html">Basic Form
+                            Elements</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/advance-form-element.html">Advanced Form
+                            Elements</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/password-meter.html">Password Meter</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/multi-upload.html">Multi Upload</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/tinymc.html">Text Editor</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/dual-list-box.html">Dual List Box</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#Appviewsmob" href="#">App views <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="Appviewsmob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/basic-form-element.html">Basic Form
+                            Elements</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/advance-form-element.html">Advanced Form
+                            Elements</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/password-meter.html">Password Meter</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/multi-upload.html">Multi Upload</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/tinymc.html">Text Editor</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/dual-list-box.html">Dual List Box</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a data-toggle="collapse" data-target="#Pagemob" href="#">Pages <span
+                          class="admin-project-icon nalika-icon nalika-down-arrow"></span></a>
+                      <ul id="Pagemob" class="collapse dropdown-header-top">
+                        <li><a href="https://colorlib.com/polygon/nalika/login.html">Login</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/register.html">Register</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/lock.html">Lock</a>
+                        </li>
+                        <li><a href="https://colorlib.com/polygon/nalika/password-recovery.html">Password Recovery</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcome-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <div class="breadcome-list">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="breadcomb-wp">
+                      <div class="breadcomb-icon">
+                        <i class="icon nalika-home"></i>
+                      </div>
+                      <div class="breadcomb-ctn">
+                        <h2>Dashboard One</h2>
+                        <p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="breadcomb-report">
+                      <button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i
+                          class="icon nalika-download"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-admin container-fluid">
+      <div class="row admin text-center">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="admin-content analysis-progrebar-ctn res-mg-t-15">
+                <h4 class="text-left text-uppercase"><b>Orders</b></h4>
+                <div class="row vertical-center-box vertical-center-box-tablet">
+                  <div class="col-xs-3 mar-bot-15 text-left">
+                    <label class="label bg-green">30% <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                  </div>
+                  <div class="col-xs-9 cus-gh-hd-pro">
+                    <h2 class="text-right no-margin">10,000</h2>
+                  </div>
+                </div>
+                <div class="progress progress-mini">
+                  <div style="width: 78%;" class="progress-bar bg-green"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" style="margin-bottom:1px;">
+              <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                <h4 class="text-left text-uppercase"><b>Tax Deduction</b></h4>
+                <div class="row vertical-center-box vertical-center-box-tablet">
+                  <div class="text-left col-xs-3 mar-bot-15">
+                    <label class="label bg-red">15% <i class="fa fa-level-down" aria-hidden="true"></i></label>
+                  </div>
+                  <div class="col-xs-9 cus-gh-hd-pro">
+                    <h2 class="text-right no-margin">5,000</h2>
+                  </div>
+                </div>
+                <div class="progress progress-mini">
+                  <div style="width: 38%;" class="progress-bar progress-bar-danger bg-red"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                <h4 class="text-left text-uppercase"><b>Revenue</b></h4>
+                <div class="row vertical-center-box vertical-center-box-tablet">
+                  <div class="text-left col-xs-3 mar-bot-15">
+                    <label class="label bg-blue">50% <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                  </div>
+                  <div class="col-xs-9 cus-gh-hd-pro">
+                    <h2 class="text-right no-margin">$70,000</h2>
+                  </div>
+                </div>
+                <div class="progress progress-mini">
+                  <div style="width: 60%;" class="progress-bar bg-blue"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                <h4 class="text-left text-uppercase"><b>Yearly Sales</b></h4>
+                <div class="row vertical-center-box vertical-center-box-tablet">
+                  <div class="text-left col-xs-3 mar-bot-15">
+                    <label class="label bg-purple">80% <i class="fa fa-level-up" aria-hidden="true"></i></label>
+                  </div>
+                  <div class="col-xs-9 cus-gh-hd-pro">
+                    <h2 class="text-right no-margin">$100,000</h2>
+                  </div>
+                </div>
+                <div class="progress progress-mini">
+                  <div style="width: 60%;" class="progress-bar bg-purple"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-sales-area mg-tb-30">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <div class="product-sales-chart">
+              <div class="portlet-title">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="caption pro-sl-hd">
+                      <span class="caption-subject text-uppercase"><b>Product Sales</b></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="actions graph-rp">
+                      <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-grey active">
+                          <input type="radio" name="options" class="toggle" id="option1" checked>Today</label>
+                        <label class="btn btn-grey">
+                          <input type="radio" name="options" class="toggle" id="option2">Week</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="white-box analytics-info-cs mg-b-30 res-mg-t-30">
+              <h3 class="box-title">Total Visit</h3>
+              <ul class="list-inline two-part-sp">
+                <li>
+                  <div id="sparklinedash"></div>
+                </li>
+                <li class="text-right sp-cn-r"><i class="fa fa-level-up" aria-hidden="true"></i> <span
+                    class="counter sales-sts-ctn">8659</span></li>
+              </ul>
+            </div>
+            <div class="white-box analytics-info-cs mg-b-30">
+              <h3 class="box-title">Total Page Views</h3>
+              <ul class="list-inline two-part-sp">
+                <li>
+                  <div id="sparklinedash2"></div>
+                </li>
+                <li class="text-right"><i class="fa fa-level-up" aria-hidden="true"></i> <span
+                    class="counter sales-sts-ctn">7469</span></li>
+              </ul>
+            </div>
+            <div class="white-box analytics-info-cs mg-b-30">
+              <h3 class="box-title">Unique Visitor</h3>
+              <ul class="list-inline two-part-sp">
+                <li>
+                  <div id="sparklinedash3"></div>
+                </li>
+                <li class="text-right"><i class="fa fa-level-up" aria-hidden="true"></i> <span
+                    class="counter sales-sts-ctn">6011</span></li>
+              </ul>
+            </div>
+            <div class="white-box analytics-info-cs">
+              <h3 class="box-title">Bounce Rate</h3>
+              <ul class="list-inline two-part-sp">
+                <li>
+                  <div id="sparklinedash4"></div>
+                </li>
+                <li class="text-right"><i class="fa fa-level-down" aria-hidden="true"></i> <span
+                    class="sales-sts-ctn">18%</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="traffic-analysis-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="white-box tranffic-als-inner">
+              <h3 class="box-title"><small class="pull-right m-t-10 text-success last-month-sc cl-one"><i
+                    class="fa fa-sort-asc"></i> 18% last month</small> Site Traffic</h3>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <h6>Overall Growth</h6>
+                  <b>80.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Montly</h6>
+                  <b>15.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Day</h6>
+                  <b>5.50%</b>
+                </div>
+              </div>
+              <div id="sparkline8"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="white-box tranffic-als-inner res-mg-t-30">
+              <h3 class="box-title"><small class="pull-right m-t-10 text-danger last-month-sc cl-two"><i
+                    class="fa fa-sort-desc"></i> 18% last month</small>Site Traffic</h3>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <h6>Overall Growth</h6>
+                  <b>80.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Montly</h6>
+                  <b>15.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Day</h6>
+                  <b>5.50%</b>
+                </div>
+              </div>
+              <div id="sparkline9"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="white-box tranffic-als-inner res-mg-t-30">
+              <h3 class="box-title"><small class="pull-right m-t-10 text-success last-month-sc cl-three"><i
+                    class="fa fa-sort-asc"></i> 18% last month</small>Site Traffic</h3>
+              <div class="stats-row">
+                <div class="stat-item">
+                  <h6>Overall Growth</h6>
+                  <b>80.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Montly</h6>
+                  <b>15.40%</b>
+                </div>
+                <div class="stat-item">
+                  <h6>Day</h6>
+                  <b>5.50%</b>
+                </div>
+              </div>
+              <div id="sparkline10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-new-list-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="single-new-trend mg-t-30">
+              <a href="#"><img src="https://colorlib.com/polygon/nalika/img/new-product/5.png" alt></a>
+              <div class="overlay-content">
+                <a href="#">
+                  <h2>$280</h2>
+                </a>
+                <a href="#" class="btn-small">Now</a>
+                <div class="product-action">
+                  <ul>
+                    <li>
+                      <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag"
+                          aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart"
+                          aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="pro-tlt" href="#">
+                  <h4>Princes Diamond</h4>
+                </a>
+                <div class="pro-rating">
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="single-new-trend mg-t-30">
+              <a href="#"><img src="https://colorlib.com/polygon/nalika/img/new-product/5.png" alt></a>
+              <div class="overlay-content">
+                <a href="#">
+                  <h2>$280</h2>
+                </a>
+                <a href="#" class="btn-small">Now</a>
+                <div class="product-action">
+                  <ul>
+                    <li>
+                      <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag"
+                          aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart"
+                          aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#">
+                  <h4>Princes Diamond</h4>
+                </a>
+                <div class="pro-rating">
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="single-new-trend mg-t-30">
+              <a href="#"><img src="https://colorlib.com/polygon/nalika/img/new-product/5.png" alt></a>
+              <div class="overlay-content">
+                <a href="#">
+                  <h2>$280</h2>
+                </a>
+                <a href="#" class="btn-small">Now</a>
+                <div class="product-action">
+                  <ul>
+                    <li>
+                      <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag"
+                          aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart"
+                          aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#">
+                  <h4>Princes Diamond</h4>
+                </a>
+                <div class="pro-rating">
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="single-new-trend mg-t-30">
+              <a href="#"><img src="https://colorlib.com/polygon/nalika/img/new-product/5.png" alt></a>
+              <div class="overlay-content">
+                <a href="#">
+                  <h2>$280</h2>
+                </a>
+                <a href="#" class="btn-small">Now</a>
+                <div class="product-action">
+                  <ul>
+                    <li>
+                      <a data-toggle="tooltip" title="Shopping" href="#"><i class="fa fa-shopping-bag"
+                          aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                      <a data-toggle="tooltip" title="Quick view" href="#"><i class="fa fa-heart"
+                          aria-hidden="true"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <a href="#">
+                  <h4>Princes Diamond</h4>
+                </a>
+                <div class="pro-rating">
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="fa fa-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star color"></i>
+                  <i class="icon nalika-half-filled-rating-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-sales-area mg-tb-30">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <div class="product-sales-chart">
+              <div class="portlet-title">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="caption pro-sl-hd">
+                      <span class="caption-subject text-uppercase"><b>Order Statistic</b></span>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="actions graph-rp">
+                      <a href="#" class="btn btn-dark-blue btn-circle active tip-top" data-toggle="tooltip"
+                        title="Upload">
+                        <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" class="btn btn-dark btn-circle active tip-top" data-toggle="tooltip" title="Refresh">
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" class="btn btn-blue-grey btn-circle active tip-top" data-toggle="tooltip"
+                        title="Delete">
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="line-chart" class="flot-chart flot-chart-sts line-chart-statistic"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="analytics-rounded mg-b-30 res-mg-t-30">
+              <div class="analytics-rounded-content">
+                <h5>Percentage distribution</h5>
+                <h2><span class="counter">60</span>/20</h2>
+                <div class="text-center">
+                  <div id="sparkline51"></div>
+                </div>
+              </div>
+            </div>
+            <div class="analytics-rounded">
+              <div class="analytics-rounded-content">
+                <h5>Percentage division</h5>
+                <h2><span class="counter">150</span>/<span class="counter">54</span></h2>
+                <div class="text-center">
+                  <div id="sparkline52"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="author-area-pro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="personal-info-wrap">
+              <div class="widget-head-info-box">
+                <div class="persoanl-widget-hd">
+                  <h2>Jon Royita</h2>
+                  <p>Founder of Uttara It Park</p>
+                </div>
+                <img src="https://colorlib.com/polygon/nalika/img/notification/5.jpg"
+                  class="img-circle circle-border m-b-md" alt="profile">
+                <div class="social-widget-result">
+                  <span>100 Tweets</span> |
+                  <span>350 Following</span> |
+                  <span>610 Followers</span>
+                </div>
+              </div>
+              <div class="widget-text-box">
+                <h4>Jhon Royita</h4>
+                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.
+                </p>
+                <div class="text-right like-love-list">
+                  <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                  <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="author-widgets-single res-mg-t-30">
+              <div class="author-wiget-inner">
+                <div class="perso-img">
+                  <img src="https://colorlib.com/polygon/nalika/img/notification/6.jpg"
+                    class="img-circle circle-border m-b-md" alt="profile">
+                </div>
+                <div class="persoanl-widget-hd persoanl1-widget-hd">
+                  <h2>Fire Foxy</h2>
+                  <p>Founder of Uttara It House</p>
+                </div>
+                <div class="social-widget-result social-widget1-result">
+                  <span>100 Tweets</span> |
+                  <span>350 Following</span> |
+                  <span>610 Followers</span>
+                </div>
+              </div>
+              <div class="widget-text-box">
+                <h4>Fire Foxy</h4>
+                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.
+                </p>
+                <div class="text-right like-love-list">
+                  <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                  <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="personal-info-wrap personal-info-ano res-mg-t-30">
+              <div class="widget-head-info-box">
+                <div class="persoanl-widget-hd">
+                  <h2>Jon Royita</h2>
+                  <p>Founder of Uttara It Park</p>
+                </div>
+                <img src="https://colorlib.com/polygon/nalika/img/contact/2.jpg" class="img-circle circle-border m-b-md"
+                  alt="profile">
+                <div class="social-widget-result">
+                  <span>100 Tweets</span> |
+                  <span>350 Following</span> |
+                  <span>610 Followers</span>
+                </div>
+              </div>
+              <div class="widget-text-box">
+                <h4>Jhon Royita</h4>
+                <p>To all the athaists attacking me right now, I can't make you believe in God, you have to have faith.
+                </p>
+                <div class="text-right like-love-list">
+                  <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                  <a class="btn btn-xs btn-primary"><i class="fa fa-heart"></i> Love</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="calender-area mg-tb-30">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="calender-inner">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright-area">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-copy-right">
+              <p>Copyright © 2018 <a href="https://colorlib.com/wp/templates/">Colorlib</a> All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://colorlib.com/polygon/nalika/js/vendor/jquery-1.12.4.min.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/bootstrap.min.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/wow.min.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/jquery-price-slider.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/jquery.meanmenu.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/owl.carousel.min.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/jquery.sticky.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/jquery.scrollUp.min.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/scrollbar/mCustomScrollbar-active.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/metisMenu/metisMenu.min.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/metisMenu/metisMenu-active.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/sparkline/jquery.sparkline.min.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/sparkline/jquery.charts-sparkline.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/calendar/moment.min.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/calendar/fullcalendar.min.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/calendar/fullcalendar-active.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/flot/jquery.flot.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/flot/jquery.flot.resize.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/flot/curvedLines.js"></script>
+  <script src="https://colorlib.com/polygon/nalika/js/flot/flot-active.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/plugins.js"></script>
+
+  <script src="https://colorlib.com/polygon/nalika/js/main.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+    integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+    data-cf-beacon='{"rayId":"8224fb5ca8281fb8","b":1,"version":"2023.10.0","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+    crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from colorlib.com/polygon/nalika/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2023 10:44:40 GMT -->
+
+</html>
