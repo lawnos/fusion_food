@@ -28,11 +28,6 @@ include("title.php");
                         </select>
 
                     </div>
-
-
-
-
-
                     <div class="mb-3 form_btn form-check">
                         <input class="btn btn-primary mr-3 text-left" type="submit" name="capnhatdonhang"
                             value="CẬP NHẬT MỚI" required>
@@ -40,7 +35,6 @@ include("title.php");
                                 value="DANH SÁCH"></a>
                     </div>
                 </form>
-
                 <?php
                 if (isset($thongbao) && $thongbao != "") {
                     echo '<div class="alert alert-success" role="alert">' . $thongbao . '</div>';

@@ -19,7 +19,6 @@ include "trangthaidonhang/title.php"
                             <th>Phương thức thanh toán</th>
                             <th>Trạng thái</th>
                             <th>Thao tác</th>
-
                         </tr>
                         <?php
                         $rowCount = 0;
