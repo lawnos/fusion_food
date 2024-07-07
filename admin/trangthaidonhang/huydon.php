@@ -25,7 +25,6 @@
                             extract($value);
                             $rowCount++;
                             ?>
-                        
                             <tr>
                                 <td>
                                     <?= $key + 1 ?>
@@ -49,10 +48,8 @@
                                     <?= $loai_thanhtoan ?>
                                 </td>
                                <?php 
-                               
                                ?>
-                                <td>
-                                    
+                                <td>                                   
                                     <a 
                                         href="index.php?act=chitietdonhang&iddh=<?= $ma_donhang ?>">
                                         <button data-toggle="tooltip" title="" class="pd-setting-ed"
@@ -60,9 +57,7 @@
                                                 aria-hidden="true"></i></button>
                                     </a>
                                 </td>
-                            </tr>
-
-                            
+                            </tr>                           
                         <?php } ?>
                     </tbody>
                 </table>

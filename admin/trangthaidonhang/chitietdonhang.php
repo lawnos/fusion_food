@@ -6,11 +6,9 @@ include "trangthaidonhang/title.php"
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="product-status-wrap">
                 <h4>Chi tiết đơn hàng</h4>
-
                 <table>
                     <tbody>
                         <tr>
-
                             <th>Tên khách hàng</th>
                             <th>Ảnh món ăn</th>
                             <th>Số điện thoại</th>
@@ -23,15 +21,12 @@ include "trangthaidonhang/title.php"
                             <th>Phương thức thanh toán</th>
                             <th>Ngày mua</th>
                             <th>Trạng thái</th>
-
-
                         </tr>
                         <?php
 
                         foreach ($chitiet as $key => $chitiet) {
                             ?>
                             <tr>
-
                                 <td>
                                     <?php echo $chitiet['hoten']; ?>
                                 </td>
@@ -68,7 +63,6 @@ include "trangthaidonhang/title.php"
                                 <td>
                                     <?php echo $chitiet['tentrangthai']; ?>
                                 </td>
-
                             </tr>
                         <?php } ?>
 
