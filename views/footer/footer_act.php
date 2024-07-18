@@ -201,7 +201,7 @@
 <script src="views/assets/js/custom.min.js"></script>
 <script src="views/assets/js/dznav-init.js"></script>
 <script src="views/assets/vendor/rangeslider/rangeslider.js"></script>
-<!-- <script src="views/assets/vendor/switcher/switcher.js"></script> -->
+<script src="views/assets/vendor/switcher/switcher.js"></script>
 <script src="views/assets/app.js"></script>
 
 <script>

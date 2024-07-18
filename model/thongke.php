@@ -89,20 +89,3 @@ function thongke_binhluan()
     $list = pdo_query($sql);
     return $list;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

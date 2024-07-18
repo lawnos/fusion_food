@@ -20,7 +20,7 @@ if (isset($list_tintuc_one) && is_array($list_tintuc_one)) {
                     <div class="mb-3">
                         <label for="ok1" class="form-label">Mô tả ngắn</label>
                         <input type="text" name="motangan" class="form-control" id="ok1" placeholder="Nhập mô tả tin tức"
-                            required value="<?= $motangan ?>">
+                             value="<?= $motangan ?>">
                     </div>
                     <div class="mb-3">
                         <label for="ok1" class="form-label">Mô tả</label>

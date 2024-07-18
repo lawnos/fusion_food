@@ -6,6 +6,7 @@ include("binhluan/title.php");
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="product-status-wrap">
                 <?php
+                $list_id_cmt = isset($list_id_cmt) ? $list_id_cmt : [];
                 if (count($list_id_cmt) > 0) {
 
                     foreach ($list_id_cmt as $key => $value) {

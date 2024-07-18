@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Admin CP</title>
+    <title>Bảng Điều Khiển</title>
     <meta name="description" content>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

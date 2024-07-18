@@ -44,6 +44,13 @@ function insert_tk($hoten, $sodienthoai, $email, $pass, $anh_taikhoan, $diachi, 
     return pdo_execute_id($sql, $hoten, $sodienthoai, $email, $pass, $anh_taikhoan, $diachi, $vaitro);
 }
 
+// function insert_tk($hoten, $sodienthoai, $email, $pass, $anh_taikhoan, $diachi, $vaitro = 0)
+// {
+//     $vaitro = ($vaitro === null) ? 0 : $vaitro;
+//     $sql = "INSERT INTO tbl_taikhoan(hoten, sodienthoai, email, matkhau, anh_taikhoan, diachi, vaitro) VALUES (?,?,?,?,?,?,?)";
+//     return pdo_execute_id($sql, $hoten, $sodienthoai, $email, $pass, $anh_taikhoan, $diachi, $vaitro);
+// }
+
 function update_taikhoan($hoten, $sodienthoai, $email, $matkhau, $vaitro, $new_anhtk, $diachi, $id_nguoidung)
 {
     if ($new_anhtk != "") {

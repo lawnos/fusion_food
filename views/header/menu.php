@@ -7,7 +7,7 @@
 
                 <!-- Website Logo -->
                 <div class="logo-header mostion">
-                    <a href="index.php" class="anim-logo"><img src="views/assets/images/logo_home.png" alt="/"></a>
+                    <a href="index.php" class="anim-logo"><img src="views/assets/images/logo.png" alt="/"></a>
                 </div>
 
                 <!-- Nav Toggle Button -->

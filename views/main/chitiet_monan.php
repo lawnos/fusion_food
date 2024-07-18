@@ -28,7 +28,7 @@ extract($listmonan);
 				<div class="row product-detail">
 					<div class="col-lg-4 col-md-5">
 						<div class="detail-media m-b30">
-							<img src="uploads/monan/<?= $anh_monan ?>" alt="/">
+							<img src="uploads/monan/<?= $anh_monan ?>" width="735px" height="770px" alt="/">
 						</div>
 					</div>
 					<div class="col-lg-8 col-md-7">
@@ -266,5 +266,5 @@ extract($listmonan);
 			</div>
 		</div>
 	</section>
-	<!-- Image Box-1 -->
+
 </div>

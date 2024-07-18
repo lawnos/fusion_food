@@ -13,6 +13,7 @@ function pdo_get_connection()
         echo "Connection failed: " . $e->getMessage();
     }
 }
+
 function pdo_execute($sql)
 {
     $sql_args = array_slice(func_get_args(), 1);
@@ -41,6 +42,24 @@ function pdo_execute_id($sql)
         unset($conn);
     }
 }
+
+// function pdo_execute_id($sql, ...$args) {
+//     $conn = connect_pdo();
+//     if (!$conn) {
+//         return null;
+//     }
+
+//     $stmt = $conn->prepare($sql);
+//     try {
+//         $stmt->execute($args);
+//         return $conn->lastInsertId();
+//     } catch (PDOException $e) {
+//         echo "Lỗi khi thực hiện truy vấn: " . $e->getMessage();
+//         return null;
+//     }
+// }
+
+
 
 // truy vấn nhiều dữ liệu
 function pdo_query($sql)
