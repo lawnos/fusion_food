@@ -771,7 +771,7 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                             }
 
                             // Hiển thị chi tiết hóa đơn đã chèn
-                            $pdo = new PDO('mysql:host=localhost;dbname=your_database', 'username', 'password');
+                            $pdo = new PDO('mysql:host=localhost;dbname=fusion_food', 'username', 'password');
                             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                             $stmt = $pdo->prepare("SELECT * FROM tbl_hoadon WHERE ma_donhang = ?");
                             $stmt->execute([$ma_donhang]);
