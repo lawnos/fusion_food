@@ -569,7 +569,7 @@
 			</div>
 			<div class="swiper blog-swiper swiper-visible swiper-btn-lr">
 				<div class="swiper-wrapper">
-					<!-- <?php
+					<?php
 					if (is_array($list_all_post)) {
 						foreach ($list_all_post as $key => $value) {
 					?>
@@ -595,7 +595,7 @@
 								</div>
 							</div>
 					<?php }
-					} ?> -->
+					} ?>
 
 				</div>
 				<div class="pagination mt-xl-0 m-t40">
