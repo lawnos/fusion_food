@@ -1,23 +1,21 @@
 <div class="page-content bg-white">
-    <!-- Banner  -->
+   
     <div class="dz-bnr-inr style-1 text-center bg-parallax" style="background-image:url('assets/images/banner/bnr4.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Theo dõi đơn hàng của bạn</h1>
-                <!-- Breadcrumb Row -->
+               
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Theo dõi đơn hàng của bạn</li>
                     </ul>
                 </nav>
-                <!-- Breadcrumb Row End -->
+               
             </div>
         </div>
     </div>
-    <!-- Banner End -->
-
-    <!-- Team Section -->
+  
     <section class="custom-container">
         <div class="row">
             <div class="col-12">

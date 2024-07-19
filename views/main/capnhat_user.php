@@ -1,23 +1,21 @@
 <div class="page-content bg-white">
-    <!-- Banner  -->
+  
     <div class="dz-bnr-inr style-1 text-center bg-parallax" style="background-image:url('assets/images/banner/bnr4.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="dz-bnr-inr-entry">
                 <h1>Cập nhật thông tin</h1>
-                <!-- Breadcrumb Row -->
+           
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Cập nhật thông tin</li>
                     </ul>
                 </nav>
-                <!-- Breadcrumb Row End -->
+                
             </div>
         </div>
     </div>
-    <!-- Banner End -->
-
-    <!-- Team Section -->
+   
     <?php extract($user) ?>
     <section class="content-inner">
         <div class="container">
@@ -99,6 +97,6 @@
             </div>
         </div>
     </section>
-    <!-- Team Section -->
+ 
 
 </div>

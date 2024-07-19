@@ -261,7 +261,6 @@
             </form>
         </div>
 
-
         <script>
         var btn_dangki = document.querySelector("#btn_dangki");
         var check_name = document.querySelector(".check_name");

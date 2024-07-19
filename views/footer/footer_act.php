@@ -67,10 +67,10 @@
         <div class="footer-bottom">
             <div class="row">
                 <div class="col-xl-6 col-md-6 text-md-start">
-                    <p>Bản quyền 2023.</p>
+                    <p>Bản quyền 2024.</p>
                 </div>
                 <div class="col-xl-6 col-md-6 text-md-end">
-                    <span class="copyright-text">Được viết <span class="heart"></span>bởi <a href="https://dexignzone.com/" target="_blank">DexignZone</a></span>
+                    <span class="copyright-text">Được viết <span class="heart"></span>bởi <a href="https://dexignzone.com/" target="_blank">FusionFood</a></span>
                 </div>
             </div>
         </div>

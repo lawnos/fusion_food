@@ -168,7 +168,7 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" style="overflow-y: scroll; width: 2px;" class>
             <div class="sidebar-header">
-                <a href="http://localhost/NTN_FOOD/admin/index.php"><img class="main-logo" src="img/logo.png" alt="" /></a>
+                <a href="http://localhost/fusion/admin/index.php"><img class="main-logo" src="img/logo.png" alt="" /></a>
                 <!-- <strong><img src="img/logosn.png" alt /></strong> -->
             </div>
             <div class="nalika-profile">

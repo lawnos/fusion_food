@@ -16,7 +16,6 @@ include("./model/mail.php");
 
 
 
-
 // session_destroy();
 // die();
 
@@ -92,13 +91,13 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
             break;
 
         case "dangki":
-            
+
             if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $hoten = $_POST["hoten"];
                 $sodienthoai = $_POST["sodienthoai"];
                 $email = $_POST["email"];
-                $pass = $_POST["pass"];
-                $anh_taikhoan = "avt.jpg";
+                $pass = $_POST["matkhau"];
+                $anh_taikhoan = "";
                 $diachi = "Địa chỉ ?";
 
                 $id_nguoidung = insert_tk($hoten, $sodienthoai, $email, $pass, $vaitro = 0, $anh_taikhoan, $diachi);
@@ -898,8 +897,8 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     $orderInfo = "Thanh toán qua MoMo";
                     $amount = $_POST["tongtien"];
                     $orderId = $_POST["ma_donhang"];
-                    $redirectUrl = "http://localhost/NTN_Food/index.php?act=camon-momo";
-                    $ipnUrl = "http://localhost/NTN_Food/index.php?act=camon-momo";
+                    $redirectUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
+                    $ipnUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
                     $extraData = ($_POST["extraData"] ? $_POST["extraData"] : "");
 
                     $requestId = time() . "";

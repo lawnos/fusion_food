@@ -2,27 +2,23 @@
 if (isset($_SESSION["cart"]) && count($_SESSION["cart"]) > 0) {
     ?>
     <div class="page-content bg-white">
-        <!-- Banner  -->
+     
         <div class="dz-bnr-inr style-1 text-center bg-parallax"
             style="background-image:url('views/assets/images/banner/bnr4.jpg'); background-size:cover; background-position:center;">
             <div class="container">
                 <div class="dz-bnr-inr-entry">
                     <h1>Giỏ hàng</h1>
-                    <!-- Breadcrumb Row -->
+                  
                     <nav aria-label="breadcrumb" class="breadcrumb-row">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
                         </ul>
                     </nav>
-                    <!-- Breadcrumb Row End -->
+                  
                 </div>
             </div>
-        </div>
-        <!-- Banner End -->
-
-        i
-        <!-- Cart Section -->
+        </div>    
         <section class="content-inner-1">
             <div class="container">
                 <form action="index.php?act=thanhtoan" method="post">

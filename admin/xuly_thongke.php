@@ -14,7 +14,6 @@ function thongke($ngaydat)
     return $list;
 }
 
-
 $list_donhang = thongke_donhang_ma_donhang();
 print_r($list_donhang);
 

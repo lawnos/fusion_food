@@ -3,25 +3,23 @@ extract($listmonan);
 
 ?>
 <div class="page-content bg-white">
-	<!-- Banner  -->
+
 	<div class="dz-bnr-inr style-1 text-center bg-parallax" style="background-image:url('views/assets/images/banner/bnr1.jpg'); background-size:cover; background-position:center;">
 		<div class="container">
 			<div class="dz-bnr-inr-entry">
 				<h1>Chi tiết sản phẩm</h1>
-				<!-- Breadcrumb Row -->
+				
 				<nav aria-label="breadcrumb" class="breadcrumb-row">
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
 						<li class="breadcrumb-item active" aria-current="page">Sản phẩm chi tiết</li>
 					</ul>
 				</nav>
-				<!-- Breadcrumb Row End -->
+			
 			</div>
 		</div>
 	</div>
-	<!-- Banner End -->
 
-	<!-- Product Detail Section -->
 	<form action="index.php?act=themgiohangchitiet&id_monan=<?= $id_monan ?>" method="post">
 		<section class="content-inner-1 overflow-hidden">
 			<div class="container">
@@ -120,7 +118,6 @@ extract($listmonan);
 			</div>
 		</section>
 	</form>
-
 
 	<div class="content-inner pt-0">
 		<div class="container">
@@ -222,7 +219,6 @@ extract($listmonan);
 		</div>
 	</div>
 
-	<!-- Image Box-1  -->
 	<section class="content-inner-1 bg-white overflow-hidden pt-sm-0">
 		<div class="container">
 			<div class="section-head text-center">

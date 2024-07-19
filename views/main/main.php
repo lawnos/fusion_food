@@ -1,5 +1,5 @@
 <div class="page-content bg-white">
-	<!-- Banner -->
+	
 	<div class="main-bnr-one">
 		<div class="slider-pagination">
 			<div class="main-button-prev"><i class="icon-arrow-up"></i></div>
@@ -151,9 +151,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- Banner -->
-
-	<!-- Image Box 2 -->
+	
 	<section class="content-inner bg-white section-wrapper-2 overflow-hidden">
 		<div class="container">
 			<div class="section-head text-center">
@@ -187,9 +185,7 @@
 		<img class="bg1 dz-move-down" src="views/assets/images/background/pic2.png" alt="/">
 		<img class="bg2 dz-parallax" data-parallax-speed="0.05" src="views/assets/images/background/pic3.png" alt="/">
 	</section>
-	<!-- Image Box-2 -->
-
-	<!-- Image Box-3  -->
+	
 	<section class="content-inner-1 section-wrapper-3 overflow-hidden">
 		<div class="container">
 			<div class="section-head text-center">
@@ -240,7 +236,7 @@
 			<div class="section-head text-center">
 				<h2 class="title wow flipInX" data-wow-delay="0.2s">Dịch vụ chất lượng</h2>
 			</div>
-			<!-- Icon Wrapper 1 -->
+			
 			<div class="icon-wrapper1">
 				<div class="row wow fadeInUp" data-wow-delay="0.2s">
 					<div class="col-lg-3 col-md-6 col-sm-6">
@@ -306,14 +302,12 @@
 					</div>
 				</div>
 			</div>
-			<!-- Icon Wrapper 1 -->
+			
 		</div>
 		<img class="bg1 dz-parallax" data-parallax-speed="0.05" src="views/assets/images/background/pic3.png" alt="/">
 		<img class="bg2 dz-parallax" data-parallax-speed="0.05" src="views/assets/images/background/pic4.png" alt="/">
 	</section>
-	<!-- Image Box-3 -->
-
-	<!-- Image Box-1  -->
+	
 	<section class="content-inner-1 bg-white overflow-hidden pt-sm-0">
 		<div class="container">
 			<div class="section-head text-center">
@@ -358,7 +352,6 @@
 		</div>
 	</section>
 
-	<!-- Team Section 1-->
 	<section class="content-inner-1 overflow-hidden bg-light">
 		<div class="container">
 			<div class="section-head text-center">
@@ -568,9 +561,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- Team Section 1 -->
 
-	<!-- Our Blog  -->
 	<section class="content-inner-1 overflow-hidden">
 		<div class="container">
 			<div class="section-head text-center">
@@ -578,7 +569,7 @@
 			</div>
 			<div class="swiper blog-swiper swiper-visible swiper-btn-lr">
 				<div class="swiper-wrapper">
-					<?php
+					<!-- <?php
 					if (is_array($list_all_post)) {
 						foreach ($list_all_post as $key => $value) {
 					?>
@@ -604,7 +595,7 @@
 								</div>
 							</div>
 					<?php }
-					} ?>
+					} ?> -->
 
 				</div>
 				<div class="pagination mt-xl-0 m-t40">
@@ -614,12 +605,9 @@
 			</div>
 		</div>
 	</section>
-	<!-- Our Blog End  -->
 
-	<!-- Map Iframe -->
 	<div class="map-iframe style-1">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244934.17139458598!2d75.27787773507539!3d25.125368923263647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1678086292169!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
-	<!-- Map Iframe -->
 
 </div>
