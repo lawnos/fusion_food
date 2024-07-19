@@ -10,12 +10,14 @@ include("./model/binhluan.php");
 include("./model/addcart.php");
 include("./model/list_monan_home.php");
 include("./model/bankking.php");
+include("./model/dmtintuc.php");
+include("./model/tintuc.php");
 include("./model/list_monan_cuahang.php");
 include("./model/mail.php");
 // include("./model/mail_pass.php");
 
 
-
+$list_all_post  = list_all_tintuc_home();
 
 // session_destroy();
 // die();
@@ -567,187 +569,6 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
             }
             break;
 
-            // case "dathang":
-            //     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            //         $select_pay = $_POST['phuongthucthanhtoan'];
-
-            //         // thanh toán bằng tiền mặt
-            //         if ($select_pay == "tienmat") {
-            //             date_default_timezone_set('Asia/Ho_Chi_Minh');
-            //             $ngaymua = date("Y-m-d H:i:s");
-            //             $ma_donhang = rand(0, 9999);
-            //             $_SESSION["madonhang"] = $ma_donhang;
-
-            //             if (isset($_SESSION["user"])) {
-            //                 $id = $_SESSION["user"];
-            //                 $loai_thanhtoan = "Tiền mặt";
-
-            //                 insert_bill($id, $ma_donhang, $ngaymua, $id_trangthai = 1, $loai_thanhtoan);
-            //                 foreach ($_SESSION["cart"] as $key => $value) {
-            //                     extract($value);
-            //                     insert_bill_detail($ma_donhang, $id_monan, $soluongmua);
-            //                 }
-            //             }
-
-            //             //Gửi mail
-            //             submitmail();
-
-            //             unset($_SESSION["cart"]);
-            //             unset($_SESSION["madonhang"]);
-            //             echo "<script>alert('Đặt hàng thành công');</script>";
-            //             include("./views/main/camon.php");
-
-            //             // Thanh tóan bằng vnpay
-            //         } else if ($select_pay == "vnp") {
-            //             $ma_donhang = rand(0, 9999);
-            //             $_SESSION["madonhang"] = $ma_donhang;
-            //             $vnp_TxnRef = $ma_donhang; //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
-
-            //             $i = 0;
-            //             $tongtien = 0;
-            //             foreach ($_SESSION["cart"] as $key => $value) {
-            //                 extract($value);
-            //                 $thanhtien = $value['soluongmua'] * $value['gia_monan'];
-            //                 $tongtien = $tongtien + $thanhtien;
-            //                 $i++;
-            //             }
-
-            //             $vnp_OrderInfo = "Thanh tóan đơn hàng đặt tại Fusion Food";
-            //             $vnp_OrderType = "Billpayment";
-            //             $vnp_Amount = $tongtien * 100; //Giá tiền
-            //             $vnp_Locale = "VN";
-            //             $vnp_BankCode = "NCB";
-            //             $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
-            //             $vnp_ExpireDate = $expire;
-            //             $inputData = array(
-            //                 "vnp_Version" => "2.1.0",
-            //                 "vnp_TmnCode" => $vnp_TmnCode,
-            //                 "vnp_Amount" => $vnp_Amount,
-            //                 "vnp_Command" => "pay",
-            //                 "vnp_CreateDate" => date('YmdHis'),
-            //                 "vnp_CurrCode" => "VND",
-            //                 "vnp_IpAddr" => $vnp_IpAddr,
-            //                 "vnp_Locale" => $vnp_Locale,
-            //                 "vnp_OrderInfo" => $vnp_OrderInfo,
-            //                 "vnp_OrderType" => $vnp_OrderType,
-            //                 "vnp_ReturnUrl" => $vnp_Returnurl,
-            //                 "vnp_TxnRef" => $vnp_TxnRef,
-            //                 "vnp_ExpireDate" => $vnp_ExpireDate
-            //             );
-
-            //             if (isset($vnp_BankCode) && $vnp_BankCode != "") {
-            //                 $inputData['vnp_BankCode'] = $vnp_BankCode;
-            //             }
-
-            //             // var_dump($inputData);
-            //             // die();
-
-            //             ksort($inputData);
-            //             $query = "";
-            //             $i = 0;
-            //             $hashdata = "";
-            //             foreach ($inputData as $key => $value) {
-            //                 if ($i == 1) {
-            //                     $hashdata .= '&' . urlencode($key) . "=" . urlencode($value);
-            //                 } else {
-            //                     $hashdata .= urlencode($key) . "=" . urlencode($value);
-            //                     $i = 1;
-            //                 }
-            //                 $query .= urlencode($key) . "=" . urlencode($value) . '&';
-            //             }
-
-            //             $vnp_Url = $vnp_Url . "?" . $query;
-            //             if (isset($vnp_HashSecret)) {
-            //                 $vnpSecureHash = hash_hmac('sha512', $hashdata, $vnp_HashSecret); //  
-            //                 $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
-            //             }
-            //             $returnData = array(
-            //                 'code' => '00',
-            //                 'message' => 'success',
-            //                 'data' => $vnp_Url
-            //             );
-
-            //             if (isset($_POST['redirect'])) {
-            //                 echo '<script>window.location.href = "' . $vnp_Url . '";</script>';
-            //                 die();
-            //             } else {
-            //                 echo json_encode($returnData);
-            //             }
-
-
-            //             // MomoATM
-            //         } else if ($select_pay == "momo") {
-            //             header('Content-type: text/html; charset=utf-8');
-            //             function execPostRequest($url, $data)
-            //             {
-            //                 $ch = curl_init($url);
-            //                 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-            //                 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-            //                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            //                 curl_setopt(
-            //                     $ch,
-            //                     CURLOPT_HTTPHEADER,
-            //                     array(
-            //                         'Content-Type: application/json',
-            //                         'Content-Length: ' . strlen($data)
-            //                     )
-            //                 );
-            //                 curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-            //                 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-            //                 //execute post
-            //                 $result = curl_exec($ch);
-            //                 //close connection
-            //                 curl_close($ch);
-            //                 return $result;
-            //             }
-
-
-            //             $endpoint = "https://test-payment.momo.vn/v2/gateway/api/create";
-
-
-            //             $partnerCode = 'MOMOBKUN20180529';
-            //             $accessKey = 'klm05TvNBzhg7h7j';
-            //             $secretKey = 'at67qH6mk8w5Y1nAyMoYKMWACiEi2bsa';
-
-            //             $orderInfo = "Thanh toán qua MoMo";
-            //             $amount = $_POST["tongtien"];
-            //             $orderId = $_POST["ma_donhang"];
-            //             // $orderId = time() . "";
-            //             $redirectUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
-            //             $ipnUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
-            //             $extraData = "";
-
-            //             $requestId = time() . "";
-            //             $requestType = "payWithATM";
-            //             $extraData = ($_POST["extraData"] ? $_POST["extraData"] : "");
-
-            //             //before sign HMAC SHA256 signature
-            //             $rawHash = "accessKey=" . $accessKey . "&amount=" . $amount . "&extraData=" . $extraData . "&ipnUrl=" . $ipnUrl . "&orderId=" . $orderId . "&orderInfo=" . $orderInfo . "&partnerCode=" . $partnerCode . "&redirectUrl=" . $redirectUrl . "&requestId=" . $requestId . "&requestType=" . $requestType;
-            //             $signature = hash_hmac("sha256", $rawHash, $secretKey);
-            //             $data = array(
-            //                 'partnerCode' => $partnerCode,
-            //                 'partnerName' => "Test",
-            //                 "storeId" => "MomoTestStore",
-            //                 'requestId' => $requestId,
-            //                 'amount' => $amount,
-            //                 'orderId' => $orderId,
-            //                 'orderInfo' => $orderInfo,
-            //                 'redirectUrl' => $redirectUrl,
-            //                 'ipnUrl' => $ipnUrl,
-            //                 'lang' => 'vi',
-            //                 'extraData' => $extraData,
-            //                 'requestType' => $requestType,
-            //                 'signature' => $signature
-            //             );
-            //             $result = execPostRequest($endpoint, json_encode($data));
-            //             $jsonResult = json_decode($result, true);  // decode json
-
-            //             //Just a example, please check more in there
-
-            //             header('Location: ' . $jsonResult['payUrl']);
-            //         }
-            //     }
-            //     break;
 
         case "dathang":
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -898,8 +719,8 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     $orderInfo = "Thanh toán qua MoMo";
                     $amount = $_POST["tongtien"];
                     $orderId = $_POST["ma_donhang"];
-                    $redirectUrl = "http://localhost/NTN_Food/index.php?act=camon-momo";
-                    $ipnUrl = "http://localhost/NTN_Food/index.php?act=camon-momo";
+                    $redirectUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
+                    $ipnUrl = "http://localhost/fusionfood/index.php?act=camon-momo";
                     $extraData = ($_POST["extraData"] ? $_POST["extraData"] : "");
 
                     $requestId = time() . "";
@@ -1003,6 +824,60 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
 
             include("./views/main/camon_momo.php");
             break;
+
+
+        case "tintuc":
+                if (isset($_GET['trang'])) {
+                    $page = intval($_GET['trang']);
+                } else {
+                    $page = 1;
+                }
+    
+                if ($page == "" || $page == 1) {
+                    $begin = 0;
+                } else {
+                    $begin = ($page * 6) - 6;
+                }
+    
+                $tintuc = list_page_post($begin);
+    
+                $dmtintuc = loaddmtintucAll();
+                $list_all_tintuc = list_all_tintuc_home();
+                $top3 = list_tintuc_top();
+                include("./views/tintuc/lietke.php");
+                break;
+    
+    
+        case "danhmuctintuc":
+                if (isset($_GET["id"])) {
+                    if (isset($_GET['trang'])) {
+                        $page = intval($_GET['trang']);
+                    } else {
+                        $page = 1;
+                    }
+    
+                    if ($page == "" || $page == 1) {
+                        $begin = 0;
+                    } else {
+                        $begin = ($page * 6) - 6;
+                    }
+    
+                    $id = intval($_GET['id']);
+                    $tintuc_danhmuc = list_page_post_id($begin, $id);
+                    $list_tintuc_danhmuc = list_tintuc_id($id); //Này cho đếm trang
+    
+                }
+    
+                $dmtintuc = loaddmtintucAll();
+                $top3 = list_tintuc_top();
+                include("./views/tintuc/tintuc_danhmuc.php");
+                break;  
+    
+        case "tintucchitiet":
+                $id = $_GET["idttct"];
+                $tintucchitiet = list_tintuc_One($id);
+                include("./views/tintuc/chitiet.php");
+                break;
 
         case "lienhechungtoi":
             $ho_ten = $email = $sodienthoai = $noidung = "";
