@@ -15,13 +15,10 @@ include("../model/thongke.php");
 include("../model/binhluan.php");
 include("../model/lienhe.php");
 
-
 include("../model/carbon_date/autoload.php");
 
 use Carbon\Carbon;
 // printf("Now: %s", Carbon::now("Asia/Ho_Chi_Minh"));
-
-
 
 include("./header.php");
 
