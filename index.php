@@ -83,7 +83,7 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                         extract($result);
                         $_SESSION["email"] = $email;
                         $_SESSION["user"] = $id_nguoidung;
-                        echo '<script>alert("Thành công")</script>';
+                        echo '<script>alert("Đăng nhập thành công")</script>';
                         echo '<script>window.location.href = "index.php";</script>';
                     } else {
                         $err_pass = "Bạn nhập sai số điện thoại hoặc mật khẩu.";
@@ -180,7 +180,7 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 $_SESSION["user"] = $id_nguoidung;
                 update_taikhoan($hoten, $sodienthoai, $email, $matkhau, $vaitro, $new_anhtk, $diachi, $id_nguoidung);
 
-                echo '<script>alert("Thành công")</script>';
+                echo '<script>alert("Cập nhật thành công")</script>';
                 echo '<script>window.location.href = "index.php";</script>';
             }
             break;
