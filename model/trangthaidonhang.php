@@ -10,6 +10,7 @@ function loaddonhangAll()
     $listdh = pdo_query($sql);
     return $listdh;
 }
+
 function list_sua_tt_dh($mddh)
 {
     $sql = "SELECT id_trangthai FROM tbl_hoadon WHERE ma_donhang = ?";

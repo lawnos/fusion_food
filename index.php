@@ -100,7 +100,7 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 $email = $_POST["email"];
                 $pass = $_POST["pass"];
                 $anh_taikhoan = "avt.jpg";
-                $diachi = "Ở đâu ?";
+                $diachi = "Địa chỉ?";
 
                 $id_nguoidung = insert_tk($hoten, $sodienthoai, $email, $pass, $vaitro = 0, $anh_taikhoan, $diachi);
 
