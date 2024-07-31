@@ -901,9 +901,11 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 if (empty(trim($email))) {
                     $err_email = "Bạn chưa nhập trường này";
                     $check++;
-                } else if (strpos($email, '@') === false) {
+
+                } elseif (strpos($email, '@') === false) {
+
                     $check++;
-                    $err_email = "Bạn phải nhập địa chỉ email hợp lệ";
+                    $err_email = "Địa chỉ email phải chứa ký tự @";
                 }
 
 
