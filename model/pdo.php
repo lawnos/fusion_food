@@ -4,9 +4,9 @@ function pdo_get_connection()
 {
     $servername = "localhost";
     $username = "root";
-    $password = "";
+
     try {
-        $conn = new PDO("mysql:host=$servername;dbname=fusion_food", $username, $password);
+        $conn = new PDO("mysql:host=$servername;dbname=fusion_food", $username, '');
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $conn;
     } catch (PDOException $e) {

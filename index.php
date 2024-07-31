@@ -100,7 +100,7 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 $email = $_POST["email"];
                 $pass = $_POST["pass"];
                 $anh_taikhoan = "avt.jpg";
-                $diachi = "Địa chỉ?";
+                $diachi = "Địa chỉ của bạn?";
 
                 $id_nguoidung = insert_tk($hoten, $sodienthoai, $email, $pass, $vaitro = 0, $anh_taikhoan, $diachi);
 
@@ -611,6 +611,8 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     echo "<script>alert('Đặt hàng thành công');</script>";
                     include("./views/main/camon.php");
 
+               
+
                     // Thanh toán bằng vnpay
                 } else if ($select_pay == "vnp") {
                     $ma_donhang = rand(0, 9999);
@@ -901,10 +903,11 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 if (empty(trim($email))) {
                     $err_email = "Bạn chưa nhập trường này";
                     $check++;
-                } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                } else if (strpos($email, '@') === false) {
                     $check++;
                     $err_email = "Bạn phải nhập địa chỉ email hợp lệ";
                 }
+
 
                 if (empty(trim($sodienthoai))) {
                     $err_sodienthoai = "Bạn chưa nhập trường này";
