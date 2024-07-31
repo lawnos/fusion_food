@@ -582,12 +582,13 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     if (isset($_SESSION["user"])) {
                         $id = $_SESSION["user"];
                         $loai_thanhtoan = "Tiền mặt";
+                        $id_trangthai = 1; // Giả sử trạng thái mặc định là 1
 
                         try {
-                            insert_bill($id, $ma_donhang, $ngaymua, $loai_thanhtoan);
+                            insert_billl($id, $ma_donhang, $ngaymua, $id_trangthai, $loai_thanhtoan);
                             foreach ($_SESSION["cart"] as $key => $value) {
                                 extract($value);
-                                insert_bill_detail($ma_donhang, $id_monan, $soluongmua);
+                                insert_bill_detaill($ma_donhang, $id_monan, $soluongmua);
                             }
 
                             // Hiển thị chi tiết hóa đơn đã chèn
@@ -901,9 +902,9 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                 if (empty(trim($email))) {
                     $err_email = "Bạn chưa nhập trường này";
                     $check++;
-                } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                } elseif (strpos($email, '@') === false) {
                     $check++;
-                    $err_email = "Bạn phải nhập địa chỉ email hợp lệ";
+                    $err_email = "Địa chỉ email phải chứa ký tự @";
                 }
 
                 if (empty(trim($sodienthoai))) {
