@@ -572,7 +572,6 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $select_pay = $_POST['phuongthucthanhtoan'];
 
-                // Thanh toán bằng tiền mặt
                 if ($select_pay == "tienmat") {
                     date_default_timezone_set('Asia/Ho_Chi_Minh');
                     $ngaymua = date("Y-m-d H:i:s");
@@ -582,12 +581,13 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     if (isset($_SESSION["user"])) {
                         $id = $_SESSION["user"];
                         $loai_thanhtoan = "Tiền mặt";
+                        $id_trangthai = 1; // Giả sử trạng thái mặc định là 1
 
                         try {
-                            insert_bill($id, $ma_donhang, $ngaymua, $loai_thanhtoan);
+                            insert_billl($id, $ma_donhang, $ngaymua, $id_trangthai, $loai_thanhtoan);
                             foreach ($_SESSION["cart"] as $key => $value) {
                                 extract($value);
-                                insert_bill_detail($ma_donhang, $id_monan, $soluongmua);
+                                insert_bill_detaill($ma_donhang, $id_monan, $soluongmua);
                             }
 
                             // Hiển thị chi tiết hóa đơn đã chèn
@@ -610,8 +610,6 @@ if (isset($_GET["act"]) && $_GET["act"] != "") {
                     unset($_SESSION["madonhang"]);
                     echo "<script>alert('Đặt hàng thành công');</script>";
                     include("./views/main/camon.php");
-
-               
 
                     // Thanh toán bằng vnpay
                 } else if ($select_pay == "vnp") {

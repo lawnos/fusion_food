@@ -133,6 +133,7 @@ function huydonhang($id, $id_trangthai)
     pdo_execute($sql, $id_trangthai, $id);
 }
 
+
 function loaddonhangAll_user($ma_donhang, $select_trangthai, $id)
 {
     $sql = "SELECT a.id_giohang, a.loai_thanhtoan, a.ma_donhang, c.hoten, c.diachi, c.sodienthoai, 
@@ -141,7 +142,7 @@ function loaddonhangAll_user($ma_donhang, $select_trangthai, $id)
     INNER JOIN tbl_hoadon_chitiet b ON a.ma_donhang = b.ma_donhang
     INNER JOIN tbl_diachinhanhang c ON a.id_nguoidung = c.id_nguoidung 
     INNER JOIN tbl_trangthai d ON a.id_trangthai = d.id_trangthai 
-    WHERE a.id_trangthai IN (0,1,2,3) AND a.id_nguoidung = ?";
+    WHERE a.id_nguoidung = ?";
 
     if ($ma_donhang != "") {
         $sql .= " AND a.ma_donhang = ?";
@@ -164,12 +165,6 @@ function loaddonhangAll_user($ma_donhang, $select_trangthai, $id)
         $params[] = $select_trangthai;
     }
 
-    // Debugging: Print the SQL query and parameters
-    // echo $sql;
-    // print_r($params);
-
     $listdh = pdo_query($sql, ...$params);
     return $listdh;
 }
-
-
